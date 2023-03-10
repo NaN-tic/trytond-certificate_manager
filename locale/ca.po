@@ -38,6 +38,10 @@ msgctxt "model:ir.message,text:msg_missing_pem_cert"
 msgid "Missing PEM certificate"
 msgstr "Falta certicat PEM"
 
+msgctxt "model:ir.message,text:msg_error_loading_pkcs12"
+msgid "Unable to load PKCS12: %(message)s"
+msgstr "No s'ha pogut llegir PKCS12: %(message)s"
+
 msgctxt "model:ir.rule.group,name:rule_group_certificate_manager_companies"
 msgid "User in companies"
 msgstr "Usuari a les empreses"
@@ -53,3 +57,7 @@ msgstr "Certificats"
 msgctxt "model:res.group,name:group_certificate_manager_admin"
 msgid "Certificate Manager"
 msgstr "Gestó de certificats"
+
+msgctxt "view:certificate.manager.load_pkcs12.start:"
+msgid "Load PKCS12"
+msgstr "Carrega PKCS12"
