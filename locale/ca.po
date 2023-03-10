@@ -1,0 +1,55 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:certificate.manager,company:"
+msgid "Company"
+msgstr "Empresa"
+
+msgctxt "field:certificate.manager,encrypted_private_key:"
+msgid "Encrypted Private Key"
+msgstr "Clau privada encriptada"
+
+msgctxt "field:certificate.manager,name:"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "field:certificate.manager,pem_certificate:"
+msgid "PEM Certificate"
+msgstr "Certificat PEM"
+
+msgctxt "field:certificate.manager,private_key:"
+msgid "Private Key"
+msgstr "Clau privada"
+
+msgctxt "help:certificate.manager,company:"
+msgid "Restricts the certificate usage to the company."
+msgstr "Restringeix l'ús del certificat a l'empresa."
+
+msgctxt "model:certificate.manager,name:"
+msgid "Certificate Manager"
+msgstr "Gestó de certificats"
+
+msgctxt "model:ir.action,name:act_certificate_manager_form"
+msgid "Certificats"
+msgstr "Certificats"
+
+msgctxt "model:ir.message,text:msg_missing_pem_cert"
+msgid "Missing PEM certificate"
+msgstr "Falta certicat PEM"
+
+msgctxt "model:ir.rule.group,name:rule_group_certificate_manager_companies"
+msgid "User in companies"
+msgstr "Usuari a les empreses"
+
+msgctxt "model:ir.ui.menu,name:menu_certificate_manager"
+msgid "Certificate Manager"
+msgstr "Gestó de certificats"
+
+msgctxt "model:ir.ui.menu,name:menu_certificate_manager_form"
+msgid "Certificats"
+msgstr "Certificats"
+
+msgctxt "model:res.group,name:group_certificate_manager_admin"
+msgid "Certificate Manager"
+msgstr "Gestó de certificats"
