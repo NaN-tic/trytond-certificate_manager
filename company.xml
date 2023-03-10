@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data depends="company">
+        <record model="ir.ui.view" id="certificate_manager_company_view_form">
+            <field name="model">certificate.manager</field>
+            <field name="inherit" ref="certificate_manager.certificate_manager_view_form"/>
+            <field name="name">certificate_manager_company_form</field>
+        </record>
+
+        <record model="ir.rule.group" id="rule_group_certificate_manager_companies">
+            <field name="name">User in companies</field>
+            <field name="model" search="[('model', '=', 'certificate.manager')]"/>
+            <field name="global_p" eval="True"/>
+        </record>
+        <record model="ir.rule" id="rule_certificate_manager_companies1">
+            <field name="domain"
+                eval="[('company', 'in', Eval('companies', []))]"
+                pyson="1"/>
+            <field name="rule_group" ref="rule_group_certificate_manager_companies"/>
+        </record>
+        <record model="ir.rule" id="rule_certificate_manager_comapnies2">
+            <field name="domain" eval="[('company', '=', None)]" pyson="1"/>
+            <field name="rule_group" ref="rule_group_certificate_manager_companies"/>
+        </record>
+    </data>
+</tryton>
