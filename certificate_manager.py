@@ -23,6 +23,7 @@ class CertificateManager(DeactivableMixin, ModelSQL, ModelView):
     encrypted_private_key = fields.Binary('Encrypted Private Key')
     private_key = fields.Function(fields.Binary('Private Key'),
         'get_private_key', 'set_private_key')
+    certificate_password = fields.Char('Certificate Password')
 
     @classmethod
     def get_private_key(cls, certificates, name=None):

@@ -10,4 +10,6 @@ this repository contains the full copyright notices and license terms. -->
       <field name="pem_certificate"/>
       <label name="encrypted_private_key"/>
       <field name="encrypted_private_key"/>
+      <label name="certificate_password"/>
+      <field name="certificate_password" widget="password"/>
 </form>

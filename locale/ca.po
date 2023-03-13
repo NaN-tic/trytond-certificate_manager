@@ -2,6 +2,10 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
+msgctxt "field:certificate.manager,certificate_password:"
+msgid "Certificate Password"
+msgstr "Contrasenya certificat"
+
 msgctxt "field:certificate.manager,company:"
 msgid "Company"
 msgstr "Empresa"
@@ -22,6 +26,14 @@ msgctxt "field:certificate.manager,private_key:"
 msgid "Private Key"
 msgstr "Clau privada"
 
+msgctxt "field:certificate.manager.load_pkcs12.start,password:"
+msgid "Password"
+msgstr "Contrasenya"
+
+msgctxt "field:certificate.manager.load_pkcs12.start,pfx:"
+msgid "PFX File"
+msgstr "Fitxer PFX"
+
 msgctxt "help:certificate.manager,company:"
 msgid "Restricts the certificate usage to the company."
 msgstr "Restringeix l'ús del certificat a l'empresa."
@@ -30,17 +42,25 @@ msgctxt "model:certificate.manager,name:"
 msgid "Certificate Manager"
 msgstr "Gestó de certificats"
 
+msgctxt "model:certificate.manager.load_pkcs12.start,name:"
+msgid "Load PKCS12 Start"
+msgstr "Inici càrrega PKCS12"
+
 msgctxt "model:ir.action,name:act_certificate_manager_form"
 msgid "Certificats"
 msgstr "Certificats"
 
-msgctxt "model:ir.message,text:msg_missing_pem_cert"
-msgid "Missing PEM certificate"
-msgstr "Falta certicat PEM"
+msgctxt "model:ir.action,name:act_certificate_manager_load_pkcs12"
+msgid "Load PKCS12"
+msgstr "Carrega PKCS12"
 
 msgctxt "model:ir.message,text:msg_error_loading_pkcs12"
 msgid "Unable to load PKCS12: %(message)s"
 msgstr "No s'ha pogut llegir PKCS12: %(message)s"
+
+msgctxt "model:ir.message,text:msg_missing_pem_cert"
+msgid "Missing PEM certificate"
+msgstr "Falta certicat PEM"
 
 msgctxt "model:ir.rule.group,name:rule_group_certificate_manager_companies"
 msgid "User in companies"
@@ -61,3 +81,11 @@ msgstr "Gestó de certificats"
 msgctxt "view:certificate.manager.load_pkcs12.start:"
 msgid "Load PKCS12"
 msgstr "Carrega PKCS12"
+
+msgctxt "wizard_button:certificate.manager.load_pkcs12,start,end:"
+msgid "Cancel"
+msgstr "Cancel·lat"
+
+msgctxt "wizard_button:certificate.manager.load_pkcs12,start,load:"
+msgid "Load"
+msgstr "Carrega"
