@@ -34,6 +34,18 @@ msgctxt "field:certificate.manager.load_pkcs12.start,pfx:"
 msgid "PFX File"
 msgstr "Fitxer PFX"
 
+msgctxt "field:certificate.service,certificate:"
+msgid "Certificate"
+msgstr "Certificat"
+
+msgctxt "field:certificate.service,is_default:"
+msgid "Is Default"
+msgstr "Per defecte"
+
+msgctxt "field:certificate.service,service:"
+msgid "Service"
+msgstr "Servei"
+
 msgctxt "help:certificate.manager,company:"
 msgid "Restricts the certificate usage to the company."
 msgstr "Restringeix l'ús del certificat a l'empresa."
@@ -46,6 +58,10 @@ msgctxt "model:certificate.manager.load_pkcs12.start,name:"
 msgid "Load PKCS12 Start"
 msgstr "Inici càrrega PKCS12"
 
+msgctxt "model:certificate.service,name:"
+msgid "Certificate Service"
+msgstr "Servei certificat"
+
 msgctxt "model:ir.action,name:act_certificate_manager_form"
 msgid "Certificats"
 msgstr "Certificats"
@@ -53,6 +69,10 @@ msgstr "Certificats"
 msgctxt "model:ir.action,name:act_certificate_manager_load_pkcs12"
 msgid "Load PKCS12"
 msgstr "Carrega PKCS12"
+
+msgctxt "model:ir.action,name:act_certificate_service_form"
+msgid "Certificate Services"
+msgstr "Serveis certificat"
 
 msgctxt "model:ir.message,text:msg_error_loading_pkcs12"
 msgid "Unable to load PKCS12: %(message)s"
@@ -66,6 +86,10 @@ msgctxt "model:ir.rule.group,name:rule_group_certificate_manager_companies"
 msgid "User in companies"
 msgstr "Usuari a les empreses"
 
+msgctxt "model:ir.rule.group,name:rule_group_certificate_service_companies"
+msgid "User in companies"
+msgstr "Usuari a les empreses"
+
 msgctxt "model:ir.ui.menu,name:menu_certificate_manager"
 msgid "Certificate Manager"
 msgstr "Gestó de certificats"
@@ -74,9 +98,17 @@ msgctxt "model:ir.ui.menu,name:menu_certificate_manager_form"
 msgid "Certificats"
 msgstr "Certificats"
 
+msgctxt "model:ir.ui.menu,name:menu_certificate_service_form"
+msgid "Certificate Services"
+msgstr "Serveis certificat"
+
 msgctxt "model:res.group,name:group_certificate_manager_admin"
 msgid "Certificate Manager"
 msgstr "Gestó de certificats"
+
+msgctxt "selection:certificate.service,service:"
+msgid "Default"
+msgstr "Per defecte"
 
 msgctxt "view:certificate.manager.load_pkcs12.start:"
 msgid "Load PKCS12"
