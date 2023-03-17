@@ -9,6 +9,7 @@ from . import load_pkcs12
 def register():
     Pool.register(
         certificate_manager.CertificateManager,
+        certificate_manager.CertificateService,
         load_pkcs12.LoadPKCS12Start,
         module='certificate_manager', type_='model')
     Pool.register(
