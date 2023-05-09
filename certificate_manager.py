@@ -87,23 +87,3 @@ class CertificateManager(DeactivableMixin, ModelSQL, ModelView):
                 crt.flush()
                 key.flush()
                 yield (crt.name, key.name)
-
-
-class CertificateService(DeactivableMixin, ModelSQL, ModelView):
-    "Certificate Service"
-    __name__ = 'certificate.service'
-    certificate = fields.Many2One('certificate.manager', "Certificate", required=True)
-    service = fields.Selection([
-        ('default', 'Default'),
-        ], 'Service', required=True)
-    is_default = fields.Boolean('Is Default')
-
-    def get_rec_name(self, name):
-        items = []
-        if self.certificate:
-            items.append(self.certificate.rec_name)
-        if self.service:
-            items.append('[%s]' % self.service)
-        if not items:
-            items.append('(%s)' % self.id)
-        return ' '.join(items)

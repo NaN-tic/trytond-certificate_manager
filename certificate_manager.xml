@@ -120,53 +120,5 @@
           <field name="perm_create" eval="True"/>
           <field name="perm_delete" eval="True"/>
       </record>
-
-      <!-- certificate.service -->
-      <record model="ir.ui.view" id="certificate_service_view_tree">
-            <field name="model">certificate.service</field>
-            <field name="type">tree</field>
-            <field name="name">certificate_service_tree</field>
-        </record>
-      <record model="ir.ui.view" id="certificate_service_view_form">
-          <field name="model">certificate.service</field>
-            <field name="type">form</field>
-          <field name="name">certificate_service_form</field>
-      </record>
-
-      <record model="ir.action.act_window" id="act_certificate_service_form">
-          <field name="name">Certificate Services</field>
-          <field name="res_model">certificate.service</field>
-      </record>
-      <record model="ir.action.act_window.view" id="act_certificate_service_form_view1">
-          <field name="sequence" eval="10"/>
-          <field name="view" ref="certificate_service_view_tree"/>
-          <field name="act_window" ref="act_certificate_service_form"/>
-      </record>
-      <record model="ir.action.act_window.view" id="act_certificate_service_form_view2">
-          <field name="sequence" eval="20"/>
-          <field name="view" ref="certificate_service_view_form"/>
-          <field name="act_window" ref="act_certificate_service_form"/>
-      </record>
-      <menuitem
-          parent="menu_certificate_manager"
-          action="act_certificate_service_form"
-          sequence="10"
-          id="menu_certificate_service_form"/>
-
-      <record model="ir.model.access" id="access_certificate_service">
-          <field name="model" search="[('model', '=', 'certificate.service')]"/>
-          <field name="perm_read" eval="True"/>
-          <field name="perm_write" eval="False"/>
-          <field name="perm_create" eval="False"/>
-          <field name="perm_delete" eval="False"/>
-      </record>
-      <record model="ir.model.access" id="access_certificate_service_admin">
-          <field name="model" search="[('model', '=', 'certificate.service')]"/>
-          <field name="group" ref="group_certificate_manager_admin"/>
-          <field name="perm_read" eval="True"/>
-          <field name="perm_write" eval="True"/>
-          <field name="perm_create" eval="True"/>
-          <field name="perm_delete" eval="True"/>
-      </record>
 </data>
 </tryton>

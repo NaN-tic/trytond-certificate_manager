@@ -24,17 +24,5 @@ this repository contains the full copyright notices and license terms. -->
             <field name="domain" eval="[('company', '=', None)]" pyson="1"/>
             <field name="rule_group" ref="rule_group_certificate_manager_companies"/>
         </record>
-
-        <record model="ir.rule.group" id="rule_group_certificate_service_companies">
-            <field name="name">User in companies</field>
-            <field name="model" search="[('model', '=', 'certificate.service')]"/>
-            <field name="global_p" eval="True"/>
-        </record>
-        <record model="ir.rule" id="rule_certificate_service_companies">
-            <field name="domain"
-                eval="[('certificate.company', 'in', Eval('companies', []))]"
-                pyson="1"/>
-            <field name="rule_group" ref="rule_group_certificate_service_companies"/>
-        </record>
     </data>
 </tryton>
