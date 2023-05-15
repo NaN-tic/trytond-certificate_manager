@@ -15,9 +15,9 @@ from trytond.exceptions import UserError
 _logger = getLogger(__name__)
 
 
-class CertificateManager(DeactivableMixin, ModelSQL, ModelView):
-    'Certificate Manager'
-    __name__ = 'certificate.manager'
+class Certificate(DeactivableMixin, ModelSQL, ModelView):
+    'Certificate'
+    __name__ = 'certificate'
     name = fields.Char('Name',required=True)
     pem_certificate = fields.Binary('PEM Certificate',required=True)
     encrypted_private_key = fields.Binary('Encrypted Private Key')

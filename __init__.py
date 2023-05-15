@@ -8,11 +8,11 @@ from . import load_pkcs12
 
 def register():
     Pool.register(
-        certificate_manager.CertificateManager,
+        certificate_manager.Certificate,
         load_pkcs12.LoadPKCS12Start,
         module='certificate_manager', type_='model')
     Pool.register(
-        company.CertificateManager,
+        company.Certificate,
         module='certificate_manager', type_='model',
         depends=['company'])
     Pool.register(

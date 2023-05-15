@@ -27,7 +27,7 @@ _logger = getLogger(__name__)
 
 class LoadPKCS12Start(ModelView):
     "Load PKCS12 Start"
-    __name__ = "certificate.manager.load_pkcs12.start"
+    __name__ = "certificate.load_pkcs12.start"
 
     pfx = fields.Binary('PFX File', required=True)
     password = fields.Char('Password', required=True)
@@ -35,17 +35,17 @@ class LoadPKCS12Start(ModelView):
 
 class LoadPKCS12(Wizard):
     "Load PKCS12"
-    __name__ = "certificate.manager.load_pkcs12"
+    __name__ = "certificate.load_pkcs12"
     start = StateView(
-        'certificate.manager.load_pkcs12.start',
-        'certificate_manager.certificate_manager_load_pkcs12_start_view', [
+        'certificate.load_pkcs12.start',
+        'certificate_manager.certificate_load_pkcs12_start_view', [
             Button('Cancel', 'end', 'tryton-cancel'),
             Button('Load', 'load', 'tryton-ok', default=True),
         ])
     load = StateTransition()
 
     def transition_load(self):
-        CertificateManager = Pool().get('certificate.manager')
+        Certificate = Pool().get('certificate')
 
         with BytesIO(self.start.pfx) as pfx:
             try:
@@ -62,7 +62,7 @@ class LoadPKCS12(Wizard):
                     encryption_algorithm=serialization.NoEncryption(),
                 )
                 crt = certificate.public_bytes(serialization.Encoding.PEM)
-                CertificateManager.write(self.records, {
+                Certificate.write(self.records, {
                     'pem_certificate': crt,
                     'private_key': key,
                 })

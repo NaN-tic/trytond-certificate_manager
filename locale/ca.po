@@ -2,47 +2,47 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
-msgctxt "field:certificate.manager,certificate_password:"
+msgctxt "field:certificate,certificate_password:"
 msgid "Certificate Password"
 msgstr "Contrasenya certificat"
 
-msgctxt "field:certificate.manager,company:"
+msgctxt "field:certificate,company:"
 msgid "Company"
 msgstr "Empresa"
 
-msgctxt "field:certificate.manager,encrypted_private_key:"
+msgctxt "field:certificate,encrypted_private_key:"
 msgid "Encrypted Private Key"
 msgstr "Clau privada encriptada"
 
-msgctxt "field:certificate.manager,name:"
+msgctxt "field:certificate,name:"
 msgid "Name"
 msgstr "Nom"
 
-msgctxt "field:certificate.manager,pem_certificate:"
+msgctxt "field:certificate,pem_certificate:"
 msgid "PEM Certificate"
 msgstr "Certificat PEM"
 
-msgctxt "field:certificate.manager,private_key:"
+msgctxt "field:certificate,private_key:"
 msgid "Private Key"
 msgstr "Clau privada"
 
-msgctxt "field:certificate.manager.load_pkcs12.start,password:"
+msgctxt "field:certificate.load_pkcs12.start,password:"
 msgid "Password"
 msgstr "Contrasenya"
 
-msgctxt "field:certificate.manager.load_pkcs12.start,pfx:"
+msgctxt "field:certificate.load_pkcs12.start,pfx:"
 msgid "PFX File"
 msgstr "Fitxer PFX"
 
-msgctxt "help:certificate.manager,company:"
+msgctxt "help:certificate,company:"
 msgid "Restricts the certificate usage to the company."
 msgstr "Restringeix l'ús del certificat a l'empresa."
 
-msgctxt "model:certificate.manager,name:"
+msgctxt "model:certificate,name:"
 msgid "Certificate Manager"
 msgstr "Gestó de certificats"
 
-msgctxt "model:certificate.manager.load_pkcs12.start,name:"
+msgctxt "model:certificate.load_pkcs12.start,name:"
 msgid "Load PKCS12 Start"
 msgstr "Inici càrrega PKCS12"
 
@@ -78,14 +78,14 @@ msgctxt "model:res.group,name:group_certificate_manager_admin"
 msgid "Certificate Manager"
 msgstr "Gestó de certificats"
 
-msgctxt "view:certificate.manager.load_pkcs12.start:"
+msgctxt "view:certificate.load_pkcs12.start:"
 msgid "Load PKCS12"
 msgstr "Carrega PKCS12"
 
-msgctxt "wizard_button:certificate.manager.load_pkcs12,start,end:"
+msgctxt "wizard_button:certificate.load_pkcs12,start,end:"
 msgid "Cancel"
 msgstr "Cancel·lat"
 
-msgctxt "wizard_button:certificate.manager.load_pkcs12,start,load:"
+msgctxt "wizard_button:certificate.load_pkcs12,start,load:"
 msgid "Load"
 msgstr "Carrega"

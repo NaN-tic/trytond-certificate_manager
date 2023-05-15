@@ -5,15 +5,15 @@ from trytond.pool import PoolMeta
 from trytond.transaction import Transaction
 
 
-class CertificateManager(metaclass=PoolMeta):
-    __name__ = 'certificate.manager'
+class Certificate(metaclass=PoolMeta):
+    __name__ = 'certificate'
     company = fields.Many2One(
         'company.company', "Company",
         help="Restricts the certificate usage to the company.")
 
     @classmethod
     def __setup__(cls):
-        super(CertificateManager, cls).__setup__()
+        super(Certificate, cls).__setup__()
         cls._order.insert(0, ('company', 'ASC'))
 
     @staticmethod
