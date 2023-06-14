@@ -39,18 +39,22 @@ msgid "Restricts the certificate usage to the company."
 msgstr "Restringir el uso de certificado por empresa."
 
 msgctxt "model:certificate,name:"
-msgid "Certificate Manager"
+msgid "Certificate"
 msgstr "Gestión certificados"
 
 msgctxt "model:certificate.load_pkcs12.start,name:"
 msgid "Load PKCS12 Start"
 msgstr "Inicio carga PKCS 12"
 
-msgctxt "model:ir.action,name:act_certificate_manager_form"
+msgctxt "model:ir.action,name:"
 msgid "Certificats"
 msgstr "Certificado"
 
-msgctxt "model:ir.action,name:act_certificate_manager_load_pkcs12"
+msgctxt "model:ir.action,name:act_certificate_form"
+msgid "Certificats"
+msgstr "Certificado"
+
+msgctxt "model:ir.action,name:act_certificate_load_pkcs12"
 msgid "Load PKCS12"
 msgstr "Cargar PKCS12"
 
@@ -62,19 +66,31 @@ msgctxt "model:ir.message,text:msg_missing_pem_cert"
 msgid "Missing PEM certificate"
 msgstr "Falta Certificado PEM"
 
-msgctxt "model:ir.rule.group,name:rule_group_certificate_manager_companies"
+msgctxt "model:ir.rule.group,name:"
 msgid "User in companies"
 msgstr "Usuario en las empresas"
 
-msgctxt "model:ir.ui.menu,name:menu_certificate_manager"
+msgctxt "model:ir.rule.group,name:rule_group_certificate_companies"
+msgid "User in companies"
+msgstr "Usuario en las empresas"
+
+msgctxt "model:ir.ui.menu,name:"
 msgid "Certificate Manager"
 msgstr "Gestión certificados"
 
-msgctxt "model:ir.ui.menu,name:menu_certificate_manager_form"
-msgid "Certificats"
-msgstr "Certificados"
+msgctxt "model:ir.ui.menu,name:menu_certificate"
+msgid "Certificate Manager"
+msgstr "Gestión certificados"
 
-msgctxt "model:res.group,name:group_certificate_manager_admin"
+msgctxt "model:ir.ui.menu,name:menu_certificate_form"
+msgid "Certificats"
+msgstr "Certificado"
+
+msgctxt "model:res.group,name:"
+msgid "Certificate Manager"
+msgstr "Gestión certificados"
+
+msgctxt "model:res.group,name:group_certificate_admin"
 msgid "Certificate Manager"
 msgstr "Gestión certificados"
 
