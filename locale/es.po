@@ -1,0 +1,91 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:certificate,certificate_password:"
+msgid "Certificate Password"
+msgstr "Contraseña certificado"
+
+msgctxt "field:certificate,company:"
+msgid "Company"
+msgstr "Empresa"
+
+msgctxt "field:certificate,encrypted_private_key:"
+msgid "Encrypted Private Key"
+msgstr "Clave privada encriptada"
+
+msgctxt "field:certificate,name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:certificate,pem_certificate:"
+msgid "PEM Certificate"
+msgstr "Certificado PEM"
+
+msgctxt "field:certificate,private_key:"
+msgid "Private Key"
+msgstr "Clave privada"
+
+msgctxt "field:certificate.load_pkcs12.start,password:"
+msgid "Password"
+msgstr "Contraseña"
+
+msgctxt "field:certificate.load_pkcs12.start,pfx:"
+msgid "PFX File"
+msgstr "Fitxer PFX"
+
+msgctxt "help:certificate,company:"
+msgid "Restricts the certificate usage to the company."
+msgstr "Restringir el uso de certificado por empresa."
+
+msgctxt "model:certificate,name:"
+msgid "Certificate Manager"
+msgstr "Gestión certificados"
+
+msgctxt "model:certificate.load_pkcs12.start,name:"
+msgid "Load PKCS12 Start"
+msgstr "Inicio carga PKCS 12"
+
+msgctxt "model:ir.action,name:act_certificate_manager_form"
+msgid "Certificats"
+msgstr "Certificado"
+
+msgctxt "model:ir.action,name:act_certificate_manager_load_pkcs12"
+msgid "Load PKCS12"
+msgstr "Cargar PKCS12"
+
+msgctxt "model:ir.message,text:msg_error_loading_pkcs12"
+msgid "Unable to load PKCS12: %(message)s"
+msgstr "No se ha podido Cargar PKCS12: %(message)s"
+
+msgctxt "model:ir.message,text:msg_missing_pem_cert"
+msgid "Missing PEM certificate"
+msgstr "Falta Certificado PEM"
+
+msgctxt "model:ir.rule.group,name:rule_group_certificate_manager_companies"
+msgid "User in companies"
+msgstr "Usuario en las empresas"
+
+msgctxt "model:ir.ui.menu,name:menu_certificate_manager"
+msgid "Certificate Manager"
+msgstr "Gestión certificados"
+
+msgctxt "model:ir.ui.menu,name:menu_certificate_manager_form"
+msgid "Certificats"
+msgstr "Certificados"
+
+msgctxt "model:res.group,name:group_certificate_manager_admin"
+msgid "Certificate Manager"
+msgstr "Gestión certificados"
+
+msgctxt "view:certificate.load_pkcs12.start:"
+msgid "Load PKCS12"
+msgstr "Cargar PKCS12"
+
+msgctxt "wizard_button:certificate.load_pkcs12,start,end:"
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgctxt "wizard_button:certificate.load_pkcs12,start,load:"
+msgid "Load"
+msgstr "Cargar"

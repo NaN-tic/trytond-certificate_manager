@@ -7,5 +7,6 @@ from trytond.tests.test_tryton import ModuleTestCase
 class CertificateManagerTestCase(ModuleTestCase):
     'Test Certificate Manager module'
     module = 'certificate_manager'
+    extras = ['company']
 
 del ModuleTestCase
