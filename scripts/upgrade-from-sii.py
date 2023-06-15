@@ -2,9 +2,10 @@
 import sys
 
 dbname = sys.argv[1]
-config_file = sys.argv[2]
-from trytond.config import config as CONFIG
-CONFIG.update_etc(config_file)
+if len(argv) > 2:
+    config_file = sys.argv[2]
+    from trytond.config import config as CONFIG
+    CONFIG.update_etc(config_file)
 
 from trytond.pool import Pool
 from trytond.transaction import Transaction
