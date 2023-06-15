@@ -2,7 +2,7 @@
 import sys
 
 dbname = sys.argv[1]
-if len(argv) > 2:
+if len(sys.argv) > 2:
     config_file = sys.argv[2]
     from trytond.config import config as CONFIG
     CONFIG.update_etc(config_file)
