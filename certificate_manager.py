@@ -19,7 +19,7 @@ class Certificate(DeactivableMixin, ModelSQL, ModelView):
     'Certificate'
     __name__ = 'certificate'
     name = fields.Char('Name',required=True)
-    pem_certificate = fields.Binary('PEM Certificate',required=True)
+    pem_certificate = fields.Binary('PEM Certificate')
     encrypted_private_key = fields.Binary('Encrypted Private Key')
     private_key = fields.Function(fields.Binary('Private Key'),
         'get_private_key', 'set_private_key')
