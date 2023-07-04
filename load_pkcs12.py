@@ -66,9 +66,10 @@ class LoadPKCS12(Wizard):
                     'pem_certificate': crt,
                     'private_key': key,
                 })
+                certificates = ",".join([r.name for r in self.records])
                 _logger.info(
-                    'Correctly loaded SSL credentials for company %s',
-                    company.rec_name)
+                    'Correctly loaded SSL credentials certificates %s',
+                    certificates)
             except (ValueError, TypeError, UnsupportedAlgorithm) as e:
                 _logger.debug('Cryptographic error loading pkcs12: %s', e)
                 errors = e.args[0]
