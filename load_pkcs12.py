@@ -54,8 +54,7 @@ class LoadPKCS12(Wizard):
                     certificate,
                     additional_certificates,
                 ) = pkcs12.load_key_and_certificates(
-                    pfx.read(), self.start.password.encode()
-                )
+                    pfx.read(), self.start.password.encode())
                 key = private_key.private_bytes(
                     encoding=serialization.Encoding.PEM,
                     format=serialization.PrivateFormat.PKCS8,
