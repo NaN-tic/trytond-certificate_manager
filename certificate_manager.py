@@ -5,6 +5,12 @@ from contextlib import contextmanager
 from tempfile import NamedTemporaryFile
 
 from cryptography.fernet import Fernet
+from cryptography.hazmat.primitives import serialization
+from cryptography.hazmat.backends import default_backend
+from cryptography.hazmat.primitives.serialization import (load_pem_private_key,
+    load_der_private_key)
+from cryptography.x509 import (load_pem_x509_certificate,
+    load_der_x509_certificate)
 
 from trytond.config import config
 from trytond.model import DeactivableMixin, ModelView, ModelSQL, fields
@@ -13,6 +19,8 @@ from trytond.i18n import gettext
 from trytond.exceptions import UserError
 
 _logger = getLogger(__name__)
+
+ENCODING_DER = serialization.Encoding.DER
 
 
 class Certificate(DeactivableMixin, ModelSQL, ModelView):
@@ -23,7 +31,15 @@ class Certificate(DeactivableMixin, ModelSQL, ModelView):
     encrypted_private_key = fields.Binary('Encrypted Private Key')
     private_key = fields.Function(fields.Binary('Private Key'),
         'get_private_key', 'set_private_key')
-    certificate_password = fields.Char('Certificate Password')
+
+    @classmethod
+    def __register__(cls, module_name):
+        table = cls.__table_handler__(module_name)
+
+        super().__register__(module_name)
+
+        if table.column_exist('certificate_password'):
+            table.drop_column('certificate_password')
 
     @classmethod
     def get_private_key(cls, certificates, name=None):
@@ -87,3 +103,9 @@ class Certificate(DeactivableMixin, ModelSQL, ModelView):
                 crt.flush()
                 key.flush()
                 yield (crt.name, key.name)
+
+    def load_pem_key(self):
+        return load_pem_private_key(self.private_key, None, default_backend())
+
+    def load_pem_certificate(self):
+        return load_pem_x509_certificate(self.pem_certificate)
