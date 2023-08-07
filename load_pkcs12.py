@@ -7,7 +7,6 @@ from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives.serialization import pkcs12
 from cryptography.exceptions import UnsupportedAlgorithm
 
-from trytond.transaction import Transaction
 from trytond.pool import Pool
 from trytond.model import ModelView
 from trytond.model import fields
