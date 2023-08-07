@@ -7,10 +7,8 @@ from tempfile import NamedTemporaryFile
 from cryptography.fernet import Fernet
 from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.backends import default_backend
-from cryptography.hazmat.primitives.serialization import (load_pem_private_key,
-    load_der_private_key)
-from cryptography.x509 import (load_pem_x509_certificate,
-    load_der_x509_certificate)
+from cryptography.hazmat.primitives.serialization import load_pem_private_key
+from cryptography.x509 import load_pem_x509_certificate
 
 from trytond.config import config
 from trytond.model import DeactivableMixin, ModelView, ModelSQL, fields
