@@ -22,13 +22,13 @@
 
       <!-- certificate -->
       <record model="ir.ui.view" id="certificate_view_tree">
-            <field name="model">certificate</field>
-            <field name="type">tree</field>
-            <field name="name">certificate_tree</field>
-        </record>
+          <field name="model">certificate</field>
+          <field name="type">tree</field>
+          <field name="name">certificate_tree</field>
+      </record>
       <record model="ir.ui.view" id="certificate_view_form">
           <field name="model">certificate</field>
-            <field name="type">form</field>
+          <field name="type">form</field>
           <field name="name">certificate_form</field>
       </record>
 
@@ -54,14 +54,14 @@
 
       <!-- access -->
       <record model="ir.model.access" id="access_certificate">
-          <field name="model" search="[('model', '=', 'certificate')]"/>
+            <field name="model">certificate</field>
           <field name="perm_read" eval="False"/>
           <field name="perm_write" eval="False"/>
           <field name="perm_create" eval="False"/>
           <field name="perm_delete" eval="False"/>
       </record>
       <record model="ir.model.access" id="access_certificate_admin">
-          <field name="model" search="[('model', '=', 'certificate')]"/>
+          <field name="model">certificate</field>
           <field name="group" ref="group_certificate_admin"/>
           <field name="perm_read" eval="True"/>
           <field name="perm_write" eval="True"/>
@@ -70,32 +70,32 @@
       </record>
 
       <record model="ir.model.field.access" id="access_certificate_privatekey">
-          <field name="field"
-              search="[('name', '=', 'private_key'),('model.model', '=', 'certificate')]"/>
+          <field name="model">certificate</field>
+          <field name="field">private_key</field>
           <field name="perm_read" eval="False"/>
           <field name="perm_write" eval="False"/>
           <field name="perm_create" eval="False"/>
           <field name="perm_delete" eval="False"/>
       </record>
       <record model="ir.model.field.access" id="access_certificate_encryptedprivatekey">
-          <field name="field"
-              search="[('name', '=', 'encrypted_private_key'),('model.model', '=', 'certificate')]"/>
+          <field name="model">certificate</field>
+          <field name="field">encrypted_private_key</field>
           <field name="perm_read" eval="False"/>
           <field name="perm_write" eval="False"/>
           <field name="perm_create" eval="False"/>
           <field name="perm_delete" eval="False"/>
       </record>
       <record model="ir.model.field.access" id="access_certificate_certificate">
-          <field name="field"
-              search="[('name', '=', 'pem_certificate'),('model.model', '=', 'certificate')]"/>
+          <field name="model">certificate</field>
+          <field name="field">pem_certificate</field>
           <field name="perm_read" eval="False"/>
           <field name="perm_write" eval="False"/>
           <field name="perm_create" eval="False"/>
           <field name="perm_delete" eval="False"/>
       </record>
       <record model="ir.model.field.access" id="access_certificate_privatekey_admin">
-          <field name="field"
-              search="[('name', '=', 'private_key'),('model.model', '=', 'certificate')]"/>
+          <field name="model">certificate</field>
+          <field name="field">private_key</field>
           <field name="group" ref="group_certificate_admin"/>
           <field name="perm_read" eval="True"/>
           <field name="perm_write" eval="True"/>
@@ -103,8 +103,8 @@
           <field name="perm_delete" eval="True"/>
       </record>
       <record model="ir.model.field.access" id="access_certificate_encryptedprivatekey_admin">
-          <field name="field"
-              search="[('name', '=', 'encrypted_private_key'),('model.model', '=', 'certificate')]"/>
+          <field name="model">certificate</field>
+          <field name="field">encrypted_private_key</field>
           <field name="group" ref="group_certificate_admin"/>
           <field name="perm_read" eval="True"/>
           <field name="perm_write" eval="True"/>
@@ -112,8 +112,8 @@
           <field name="perm_delete" eval="True"/>
       </record>
       <record model="ir.model.field.access" id="access_certificate_certificate_admin">
-          <field name="field"
-              search="[('name', '=', 'pem_certificate'),('model.model', '=', 'certificate')]"/>
+          <field name="model">certificate</field>
+          <field name="field">pem_certificate</field>
           <field name="group" ref="group_certificate_admin"/>
           <field name="perm_read" eval="True"/>
           <field name="perm_write" eval="True"/>

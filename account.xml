@@ -5,7 +5,7 @@
     <data depends="stock_lot">
       <!-- access -->
       <record model="ir.model.access" id="access_certificate_account">
-          <field name="model" search="[('model', '=', 'certificate')]"/>
+            <field name="model">certificate</field>
           <field name="group" ref="account.group_account"/>
           <field name="perm_read" eval="True"/>
           <field name="perm_write" eval="False"/>
