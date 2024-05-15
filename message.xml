@@ -6,6 +6,9 @@ this repository contains the full copyright notices and license terms. -->
         <record model="ir.message" id="msg_missing_pem_cert">
             <field name="text">Missing PEM certificate</field>
         </record>
+        <record model="ir.message" id="msg_missing_private_key">
+            <field name="text">Missing Private Key</field>
+        </record>
         <record model="ir.message" id="msg_error_loading_pkcs12">
             <field name="text">Unable to load PKCS12: %(message)s</field>
         </record>

@@ -103,6 +103,8 @@ class Certificate(DeactivableMixin, ModelSQL, ModelView):
                 yield (crt.name, key.name)
 
     def load_pem_key(self):
+        if not self.private_key:
+            raise UserError(gettext('certificate_manager.msg_missing_private_key'))
         return load_pem_private_key(self.private_key, None, default_backend())
 
     def load_pem_certificate(self):
