@@ -46,10 +46,6 @@ msgctxt "model:certificate.load_pkcs12.start,name:"
 msgid "Load PKCS12 Start"
 msgstr "Inicio carga PKCS 12"
 
-msgctxt "model:ir.action,name:"
-msgid "Certificats"
-msgstr "Certificado"
-
 msgctxt "model:ir.action,name:act_certificate_form"
 msgid "Certificats"
 msgstr "Certificado"
