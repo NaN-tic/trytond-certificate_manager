@@ -70,10 +70,6 @@ msgctxt "model:ir.rule.group,name:rule_group_certificate_companies"
 msgid "User in companies"
 msgstr "Usuari a les empreses"
 
-msgctxt "model:ir.ui.menu,name:"
-msgid "Certificate Manager"
-msgstr "Gestó de certificats"
-
 msgctxt "model:ir.ui.menu,name:menu_certificate"
 msgid "Certificate Manager"
 msgstr "Gestó de certificats"
@@ -81,10 +77,6 @@ msgstr "Gestó de certificats"
 msgctxt "model:ir.ui.menu,name:menu_certificate_form"
 msgid "Certificats"
 msgstr "Certificats"
-
-msgctxt "model:res.group,name:"
-msgid "Certificate Manager"
-msgstr "Gestó de certificats"
 
 msgctxt "model:res.group,name:group_certificate_admin"
 msgid "Certificate Manager"
