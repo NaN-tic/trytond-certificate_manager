@@ -56,7 +56,7 @@ class Certificate(DeactivableMixin, ModelSQL, ModelView):
             pkeys.append(key)
 
         if not pkeys:
-            return {certificate.id:None for x in certificates}
+            return {x.id:None for x in certificates}
 
         return {
             certificate.id: converter(pkey) if pkey else default
