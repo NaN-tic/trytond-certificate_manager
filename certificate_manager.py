@@ -42,9 +42,6 @@ class Certificate(DeactivableMixin, ModelSQL, ModelView):
 
     @classmethod
     def get_private_key(cls, certificates, name=None):
-        if not PRODUCTION_ENV:
-            return
-
         converter = bytes
         default = None
         format_ = Transaction().context.get('%s.%s' % (cls.__name__, name))
@@ -54,6 +51,8 @@ class Certificate(DeactivableMixin, ModelSQL, ModelView):
 
         pkeys = []
         for certificate in certificates:
+            if not PRODUCTION_ENV:
+                continue
             key = certificate._get_private_key(name)
             if not key:
                 continue
