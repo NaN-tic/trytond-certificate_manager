@@ -12,5 +12,17 @@ this repository contains the full copyright notices and license terms. -->
         <record model="ir.message" id="msg_error_loading_pkcs12">
             <field name="text">Unable to load PKCS12: %(message)s</field>
         </record>
+        <record model="ir.message" id="msg_openssl_not_found">
+            <field name="text">OpenSSL command not found.</field>
+        </record>
+        <record model="ir.message" id="msg_error_loading_sat_certificate">
+            <field name="text">Unable to load SAT certificate. Check the certificate format.</field>
+        </record>
+        <record model="ir.message" id="msg_error_loading_sat_private_key">
+            <field name="text">Unable to load SAT private key. Check the key format and password.</field>
+        </record>
+        <record model="ir.message" id="msg_sat_certificate_key_mismatch">
+            <field name="text">The SAT certificate and private key do not match.</field>
+        </record>
     </data>
 </tryton>
