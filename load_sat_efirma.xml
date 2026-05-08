@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+     copyright notices and license terms. -->
+<tryton>
+    <data>
+        <record model="ir.ui.view" id="certificate_load_sat_efirma_start_view">
+            <field name="model">certificate.load_sat_efirma.start</field>
+            <field name="type">form</field>
+            <field name="name">load_sat_efirma_start</field>
+        </record>
+        <record model="ir.action.wizard" id="act_certificate_load_sat_efirma">
+            <field name="name">Load SAT e.firma</field>
+            <field name="wiz_name">certificate.load_sat_efirma</field>
+        </record>
+        <record model="ir.action.keyword"
+            id="act_certificate_load_sat_efirma_keyword1">
+            <field name="action" ref="act_certificate_load_sat_efirma"/>
+            <field name="keyword">form_action</field>
+            <field name="model">certificate,-1</field>
+        </record>
+    </data>
+</tryton>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+copyright notices and license types. -->
+<form col="2">
+    <label name="cer"/>
+    <field name="cer"/>
+    <label name="key"/>
+    <field name="key"/>
+    <label name="password"/>
+    <field name="password" widget="password"/>
+</form>
