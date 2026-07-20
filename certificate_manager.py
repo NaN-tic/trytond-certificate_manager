@@ -10,7 +10,7 @@ from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives.serialization import load_pem_private_key
 from cryptography.x509 import load_pem_x509_certificate
 
-from trytond.config import config
+import trytond.config as config
 from trytond.model import DeactivableMixin, ModelView, ModelSQL, fields
 from trytond.transaction import Transaction
 from trytond.i18n import gettext
