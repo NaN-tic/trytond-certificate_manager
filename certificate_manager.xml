@@ -7,10 +7,6 @@
       <record model="res.group" id="group_certificate_admin">
           <field name="name">Certificate Manager</field>
       </record>
-      <record model="res.user-res.group" id="user_admin_group_smtp_admin">
-          <field name="user" ref="res.user_admin"/>
-          <field name="group" ref="group_certificate_admin"/>
-      </record>
 
       <!-- Menu Top -->
       <menuitem parent="ir.menu_administration"
