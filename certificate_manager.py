@@ -19,7 +19,6 @@ from trytond.exceptions import UserError
 _logger = getLogger(__name__)
 
 ENCODING_DER = serialization.Encoding.DER
-PRODUCTION_ENV = config.getboolean('database', 'production', default=False)
 
 
 class Certificate(DeactivableMixin, ModelSQL, ModelView):
@@ -51,8 +50,6 @@ class Certificate(DeactivableMixin, ModelSQL, ModelView):
 
         pkeys = []
         for certificate in certificates:
-            if not PRODUCTION_ENV:
-                continue
             key = certificate._get_private_key(name)
             if not key:
                 continue
