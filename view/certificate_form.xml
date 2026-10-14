@@ -10,4 +10,8 @@ this repository contains the full copyright notices and license terms. -->
       <field name="pem_certificate"/>
       <label name="encrypted_private_key"/>
       <field name="encrypted_private_key"/>
+      <label name="expiration_date"/>
+      <field name="expiration_date"/>
+      <separator name="metadata" colspan="4"/>
+      <field name="metadata" colspan="4"/>
 </form>
