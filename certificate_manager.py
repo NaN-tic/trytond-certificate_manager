@@ -5,7 +5,7 @@ from contextlib import contextmanager
 from tempfile import NamedTemporaryFile
 
 from cryptography.fernet import Fernet
-from cryptography.hazmat.primitives import serialization
+from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives.serialization import load_pem_private_key
 from cryptography.x509 import load_pem_x509_certificate
@@ -29,6 +29,31 @@ class Certificate(DeactivableMixin, ModelSQL, ModelView):
     encrypted_private_key = fields.Binary('Encrypted Private Key')
     private_key = fields.Function(fields.Binary('Private Key'),
         'get_private_key', 'set_private_key')
+    metadata = fields.Function(fields.Text('Certificate Metadata'),
+        'get_certificate_info')
+    expiration_date = fields.Function(fields.Date('Expiration Date'),
+        'get_certificate_info')
+
+    def get_certificate_info(self, name):
+        with Transaction().set_context({'certificate.pem_certificate': None}):
+            record = self.__class__(self.id)
+            if not record.pem_certificate:
+                return None
+            try:
+                certificate = record.load_pem_certificate()
+            except ValueError:
+                if name == 'metadata':
+                    return gettext('certificate_manager.msg_invalid_pem')
+                return None
+        if name == 'expiration_date':
+            return certificate.not_valid_after_utc.date()
+        return gettext('certificate_manager.msg_certificate_metadata',
+            subject=certificate.subject.rfc4514_string(),
+            issuer=certificate.issuer.rfc4514_string(),
+            serial_number=str(certificate.serial_number),
+            valid_from=certificate.not_valid_before_utc.isoformat(),
+            valid_until=certificate.not_valid_after_utc.isoformat(),
+            fingerprint=certificate.fingerprint(hashes.SHA256()).hex(':'))
 
     @classmethod
     def __register__(cls, module_name):

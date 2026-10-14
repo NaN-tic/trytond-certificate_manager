@@ -3,6 +3,17 @@
 this repository contains the full copyright notices and license terms. -->
 <tryton>
     <data grouped="1">
+        <record model="ir.message" id="msg_invalid_pem">
+            <field name="text">Invalid PEM certificate.</field>
+        </record>
+        <record model="ir.message" id="msg_certificate_metadata">
+            <field name="text">Subject: %(subject)s
+Issuer: %(issuer)s
+Serial Number: %(serial_number)s
+Valid From: %(valid_from)s
+Valid Until: %(valid_until)s
+SHA-256 Fingerprint: %(fingerprint)s</field>
+        </record>
         <record model="ir.message" id="msg_missing_pem_cert">
             <field name="text">Missing PEM certificate</field>
         </record>
