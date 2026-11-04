@@ -1,0 +1,138 @@
+#
+msgid ""
+msgstr ""
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "field:certificate,certificate_password:"
+msgid "Certificate Password"
+msgstr "证书密码"
+
+msgctxt "field:certificate,company:"
+msgid "Company"
+msgstr "公司"
+
+msgctxt "field:certificate,encrypted_private_key:"
+msgid "Encrypted Private Key"
+msgstr "加密私钥"
+
+msgctxt "field:certificate,name:"
+msgid "Name"
+msgstr "名称"
+
+msgctxt "field:certificate,pem_certificate:"
+msgid "PEM Certificate"
+msgstr "PEM 证书"
+
+msgctxt "field:certificate,private_key:"
+msgid "Private Key"
+msgstr "私钥"
+
+msgctxt "field:certificate.load_pkcs12.start,password:"
+msgid "Password"
+msgstr "密码"
+
+msgctxt "field:certificate.load_pkcs12.start,pfx:"
+msgid "PFX File"
+msgstr "PFX 文件"
+
+msgctxt "help:certificate,company:"
+msgid "Restricts the certificate usage to the company."
+msgstr "将证书的使用范围限制为该公司。"
+
+msgctxt "model:certificate,name:"
+msgid "Certificate"
+msgstr "证书"
+
+msgctxt "model:certificate.load_pkcs12.start,name:"
+msgid "Load PKCS12 Start"
+msgstr "加载 PKCS12：开始"
+
+msgctxt "model:ir.action,name:act_certificate_form"
+msgid "Certificats"
+msgstr "证书"
+
+msgctxt "model:ir.action,name:act_certificate_load_pkcs12"
+msgid "Load PKCS12"
+msgstr "加载 PKCS12"
+
+#, python-format
+msgctxt "model:ir.message,text:msg_error_loading_pkcs12"
+msgid "Unable to load PKCS12: %(message)s"
+msgstr "无法加载 PKCS12：%(message)s"
+
+msgctxt "model:ir.message,text:msg_missing_pem_cert"
+msgid "Missing PEM certificate"
+msgstr "缺少 PEM 证书"
+
+msgctxt "model:ir.rule.group,name:"
+msgid "User in companies"
+msgstr "公司用户"
+
+msgctxt "model:ir.rule.group,name:rule_group_certificate_companies"
+msgid "User in companies"
+msgstr "公司用户"
+
+msgctxt "model:ir.ui.menu,name:menu_certificate"
+msgid "Certificate Manager"
+msgstr "证书管理器"
+
+msgctxt "model:ir.ui.menu,name:menu_certificate_form"
+msgid "Certificats"
+msgstr "证书"
+
+msgctxt "model:res.group,name:group_certificate_admin"
+msgid "Certificate Manager"
+msgstr "证书管理器"
+
+msgctxt "view:certificate.load_pkcs12.start:"
+msgid "Load PKCS12"
+msgstr "加载 PKCS12"
+
+msgctxt "wizard_button:certificate.load_pkcs12,start,end:"
+msgid "Cancel"
+msgstr "取消"
+
+msgctxt "wizard_button:certificate.load_pkcs12,start,load:"
+msgid "Load"
+msgstr "加载"
+
+msgctxt "field:certificate,metadata:"
+msgid "Certificate Metadata"
+msgstr "证书元数据"
+
+msgctxt "field:certificate,expiration_date:"
+msgid "Expiration Date"
+msgstr "到期日期"
+
+msgctxt "model:ir.message,text:msg_invalid_pem"
+msgid "Invalid PEM certificate."
+msgstr "PEM 证书无效。"
+
+#, python-format
+msgctxt "model:ir.message,text:msg_certificate_metadata"
+msgid ""
+"Subject: %(subject)s\n"
+"Issuer: %(issuer)s\n"
+"Serial Number: %(serial_number)s\n"
+"Valid From: %(valid_from)s\n"
+"Valid Until: %(valid_until)s\n"
+"SHA-256 Fingerprint: %(fingerprint)s"
+msgstr ""
+"主体：%(subject)s\n"
+"签发者：%(issuer)s\n"
+"序列号：%(serial_number)s\n"
+"生效时间：%(valid_from)s\n"
+"到期时间：%(valid_until)s\n"
+"SHA-256 指纹：%(fingerprint)s"
+
+msgctxt "model:certificate,string:"
+msgid "Certificate"
+msgstr "证书"
+
+msgctxt "model:ir.message,text:msg_missing_private_key"
+msgid "Missing Private Key"
+msgstr "缺少私钥"
