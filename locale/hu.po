@@ -1,0 +1,138 @@
+#
+msgid ""
+msgstr ""
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "field:certificate,certificate_password:"
+msgid "Certificate Password"
+msgstr "Tanúsítvány jelszava"
+
+msgctxt "field:certificate,company:"
+msgid "Company"
+msgstr "Cég"
+
+msgctxt "field:certificate,encrypted_private_key:"
+msgid "Encrypted Private Key"
+msgstr "Titkosított magánkulcs"
+
+msgctxt "field:certificate,name:"
+msgid "Name"
+msgstr "Név"
+
+msgctxt "field:certificate,pem_certificate:"
+msgid "PEM Certificate"
+msgstr "PEM-tanúsítvány"
+
+msgctxt "field:certificate,private_key:"
+msgid "Private Key"
+msgstr "Magánkulcs"
+
+msgctxt "field:certificate.load_pkcs12.start,password:"
+msgid "Password"
+msgstr "Jelszó"
+
+msgctxt "field:certificate.load_pkcs12.start,pfx:"
+msgid "PFX File"
+msgstr "PFX-fájl"
+
+msgctxt "help:certificate,company:"
+msgid "Restricts the certificate usage to the company."
+msgstr "A tanúsítvány használatát a vállalatra korlátozza."
+
+msgctxt "model:certificate,name:"
+msgid "Certificate"
+msgstr "Tanúsítvány"
+
+msgctxt "model:certificate.load_pkcs12.start,name:"
+msgid "Load PKCS12 Start"
+msgstr "PKCS12 betöltése – kezdés"
+
+msgctxt "model:ir.action,name:act_certificate_form"
+msgid "Certificats"
+msgstr "Tanúsítványok"
+
+msgctxt "model:ir.action,name:act_certificate_load_pkcs12"
+msgid "Load PKCS12"
+msgstr "PKCS12 betöltése"
+
+#, python-format
+msgctxt "model:ir.message,text:msg_error_loading_pkcs12"
+msgid "Unable to load PKCS12: %(message)s"
+msgstr "A PKCS12 nem tölthető be: %(message)s"
+
+msgctxt "model:ir.message,text:msg_missing_pem_cert"
+msgid "Missing PEM certificate"
+msgstr "Hiányzó PEM-tanúsítvány"
+
+msgctxt "model:ir.rule.group,name:"
+msgid "User in companies"
+msgstr "Felhasználó vállalatai"
+
+msgctxt "model:ir.rule.group,name:rule_group_certificate_companies"
+msgid "User in companies"
+msgstr "Felhasználó vállalatai"
+
+msgctxt "model:ir.ui.menu,name:menu_certificate"
+msgid "Certificate Manager"
+msgstr "Tanúsítványkezelő"
+
+msgctxt "model:ir.ui.menu,name:menu_certificate_form"
+msgid "Certificats"
+msgstr "Tanúsítványok"
+
+msgctxt "model:res.group,name:group_certificate_admin"
+msgid "Certificate Manager"
+msgstr "Tanúsítványkezelő"
+
+msgctxt "view:certificate.load_pkcs12.start:"
+msgid "Load PKCS12"
+msgstr "PKCS12 betöltése"
+
+msgctxt "wizard_button:certificate.load_pkcs12,start,end:"
+msgid "Cancel"
+msgstr "Mégse"
+
+msgctxt "wizard_button:certificate.load_pkcs12,start,load:"
+msgid "Load"
+msgstr "Betöltés"
+
+msgctxt "field:certificate,metadata:"
+msgid "Certificate Metadata"
+msgstr "Tanúsítvány metaadatai"
+
+msgctxt "field:certificate,expiration_date:"
+msgid "Expiration Date"
+msgstr "Lejárati dátum"
+
+msgctxt "model:ir.message,text:msg_invalid_pem"
+msgid "Invalid PEM certificate."
+msgstr "Érvénytelen PEM-tanúsítvány."
+
+#, python-format
+msgctxt "model:ir.message,text:msg_certificate_metadata"
+msgid ""
+"Subject: %(subject)s\n"
+"Issuer: %(issuer)s\n"
+"Serial Number: %(serial_number)s\n"
+"Valid From: %(valid_from)s\n"
+"Valid Until: %(valid_until)s\n"
+"SHA-256 Fingerprint: %(fingerprint)s"
+msgstr ""
+"Tulajdonos: %(subject)s\n"
+"Kibocsátó: %(issuer)s\n"
+"Sorozatszám: %(serial_number)s\n"
+"Érvényesség kezdete: %(valid_from)s\n"
+"Érvényesség vége: %(valid_until)s\n"
+"SHA-256 ujjlenyomat: %(fingerprint)s"
+
+msgctxt "model:certificate,string:"
+msgid "Certificate"
+msgstr "Tanúsítvány"
+
+msgctxt "model:ir.message,text:msg_missing_private_key"
+msgid "Missing Private Key"
+msgstr "Hiányzó magánkulcs"
