@@ -18,4 +18,10 @@
             <field name="model">certificate,-1</field>
         </record>
     </data>
+    <data>
+        <record model="ir.action-res.group" id="load_pkcs12_group_certificate_admin">
+            <field name="action" ref="act_certificate_load_pkcs12"/>
+            <field name="group" ref="group_certificate_admin"/>
+        </record>
+    </data>
 </tryton>
