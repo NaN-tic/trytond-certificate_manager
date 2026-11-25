@@ -1,0 +1,138 @@
+#
+msgid ""
+msgstr ""
+"Language: km\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "field:certificate,certificate_password:"
+msgid "Certificate Password"
+msgstr "ពាក្យសម្ងាត់វិញ្ញាបនបត្រ"
+
+msgctxt "field:certificate,company:"
+msgid "Company"
+msgstr "ក្រុមហ៊ុន"
+
+msgctxt "field:certificate,encrypted_private_key:"
+msgid "Encrypted Private Key"
+msgstr "សោឯកជនដែលបានអ៊ិនគ្រីប"
+
+msgctxt "field:certificate,name:"
+msgid "Name"
+msgstr "ឈ្មោះ"
+
+msgctxt "field:certificate,pem_certificate:"
+msgid "PEM Certificate"
+msgstr "វិញ្ញាបនបត្រ PEM"
+
+msgctxt "field:certificate,private_key:"
+msgid "Private Key"
+msgstr "សោឯកជន"
+
+msgctxt "field:certificate.load_pkcs12.start,password:"
+msgid "Password"
+msgstr "ពាក្យសម្ងាត់"
+
+msgctxt "field:certificate.load_pkcs12.start,pfx:"
+msgid "PFX File"
+msgstr "ឯកសារ PFX"
+
+msgctxt "help:certificate,company:"
+msgid "Restricts the certificate usage to the company."
+msgstr "កំណត់ឱ្យមានតែក្រុមហ៊ុននេះប៉ុណ្ណោះដែលអាចប្រើវិញ្ញាបនបត្រ។"
+
+msgctxt "model:certificate,name:"
+msgid "Certificate"
+msgstr "វិញ្ញាបនបត្រ"
+
+msgctxt "model:certificate.load_pkcs12.start,name:"
+msgid "Load PKCS12 Start"
+msgstr "ចាប់ផ្ដើមផ្ទុក PKCS12"
+
+msgctxt "model:ir.action,name:act_certificate_form"
+msgid "Certificats"
+msgstr "វិញ្ញាបនបត្រ"
+
+msgctxt "model:ir.action,name:act_certificate_load_pkcs12"
+msgid "Load PKCS12"
+msgstr "ផ្ទុក PKCS12"
+
+#, python-format
+msgctxt "model:ir.message,text:msg_error_loading_pkcs12"
+msgid "Unable to load PKCS12: %(message)s"
+msgstr "មិនអាចផ្ទុក PKCS12 បានទេ៖ %(message)s"
+
+msgctxt "model:ir.message,text:msg_missing_pem_cert"
+msgid "Missing PEM certificate"
+msgstr "បាត់វិញ្ញាបនបត្រ PEM"
+
+msgctxt "model:ir.rule.group,name:"
+msgid "User in companies"
+msgstr "អ្នកប្រើប្រាស់ក្នុងក្រុមហ៊ុន"
+
+msgctxt "model:ir.rule.group,name:rule_group_certificate_companies"
+msgid "User in companies"
+msgstr "អ្នកប្រើប្រាស់ក្នុងក្រុមហ៊ុន"
+
+msgctxt "model:ir.ui.menu,name:menu_certificate"
+msgid "Certificate Manager"
+msgstr "កម្មវិធីគ្រប់គ្រងវិញ្ញាបនបត្រ"
+
+msgctxt "model:ir.ui.menu,name:menu_certificate_form"
+msgid "Certificats"
+msgstr "វិញ្ញាបនបត្រ"
+
+msgctxt "model:res.group,name:group_certificate_admin"
+msgid "Certificate Manager"
+msgstr "កម្មវិធីគ្រប់គ្រងវិញ្ញាបនបត្រ"
+
+msgctxt "view:certificate.load_pkcs12.start:"
+msgid "Load PKCS12"
+msgstr "ផ្ទុក PKCS12"
+
+msgctxt "wizard_button:certificate.load_pkcs12,start,end:"
+msgid "Cancel"
+msgstr "បោះបង់"
+
+msgctxt "wizard_button:certificate.load_pkcs12,start,load:"
+msgid "Load"
+msgstr "ផ្ទុក"
+
+msgctxt "field:certificate,metadata:"
+msgid "Certificate Metadata"
+msgstr "ទិន្នន័យពិពណ៌នាអំពីវិញ្ញាបនបត្រ"
+
+msgctxt "field:certificate,expiration_date:"
+msgid "Expiration Date"
+msgstr "កាលបរិច្ឆេទផុតកំណត់"
+
+msgctxt "model:ir.message,text:msg_invalid_pem"
+msgid "Invalid PEM certificate."
+msgstr "វិញ្ញាបនបត្រ PEM មិនត្រឹមត្រូវ។"
+
+#, python-format
+msgctxt "model:ir.message,text:msg_certificate_metadata"
+msgid ""
+"Subject: %(subject)s\n"
+"Issuer: %(issuer)s\n"
+"Serial Number: %(serial_number)s\n"
+"Valid From: %(valid_from)s\n"
+"Valid Until: %(valid_until)s\n"
+"SHA-256 Fingerprint: %(fingerprint)s"
+msgstr ""
+"ប្រធានបទ៖ %(subject)s\n"
+"អ្នកចេញ៖ %(issuer)s\n"
+"លេខស៊េរី៖ %(serial_number)s\n"
+"មានសុពលភាពចាប់ពី៖ %(valid_from)s\n"
+"មានសុពលភាពរហូតដល់៖ %(valid_until)s\n"
+"ស្នាមផ្ទៀងផ្ទាត់ SHA-256៖ %(fingerprint)s"
+
+msgctxt "model:certificate,string:"
+msgid "Certificate"
+msgstr "វិញ្ញាបនបត្រ"
+
+msgctxt "model:ir.message,text:msg_missing_private_key"
+msgid "Missing Private Key"
+msgstr "បាត់សោឯកជន"
